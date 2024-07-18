@@ -1,0 +1,132 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+:root{
+    --margin-left:10%;
+    --margin-right:10%;
+    --container-back:white;
+}
+.container{
+    height: 200px;
+    background-color: var(--container-back);
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+
+}
+.header-one{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 1rem;
+
+}
+.menu{
+    
+    display: flex;
+    gap: 0.75rem;
+}
+a{
+    text-decoration: none;
+}
+.leftmenu{
+    display: flex;
+
+}
+.logo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+ .menu a{
+padding-left: 1rem;
+padding-right: 1rem;
+}
+.icons{
+position: absolute;
+top: 35px;
+}
+.rightmenu{
+    display: flex;
+    
+}
+@media only screen and (max-width:480px) and (min-width:300px){
+.menu{
+  display: none;
+}
+.sign{
+    display: none;
+}
+.res-menu{
+    display: block;
+}
+.section1{
+    flex-direction: column;
+}
+.picture{
+    flex-direction: row;
+}
+}
+
+
+/*.dropdown{
+    position: relative;
+    display: inline-block;
+}
+/* .dropdown-toogle{ 
+    background-color: aliceblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+     font-size: 16px; 
+}
+.dropdown-toggle{
+    background-color: azure;
+}
+/*.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: gray;
+    box-shadow: gray;
+    z-index: 1;
+     min-width: 100px; 
+}*/
+/* .dropdown-menu a{ 
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* .dropdown-menu a:hover{ 
+    background-color: beige;
+ } */
+/* .dropdown:hover .dropdown-menu{ */
+    /* display: block; */
+/* } */
+.section1{
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+    width:400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wordings{
+width: 600px;
+line-height: 25px;
+}
+.picture img{
+    margin-left: var(--margin-left);
+    margin-right: var(--margin-right);
+    position:absolute;
+    width: 600px;
+    height: 700PX;
+    translate: 500px;
+    top: 120px;
+    display: flex;
+    border-radius: 20PX;
+
+
+}
